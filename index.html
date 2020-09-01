@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knockout js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module">
+      import { run } from "./index.js";
+       run();
+    </script>
+</head>
+
+<body>
+    <div>The name is <span data-bind="text: personName"></span></div>
+    <div><input id="vName" type="text" data-bind="value: personName" /></div>
+    <p>List of courses available:</p>
+    <ul data-bind="foreach: personArray ">
+        <li><span data-bind="text: name"></span></li>
+    </ul>
+    <div>
+        <input type="button" value="Click Me" data-bind="click: btnClick">
+    </div>
+    <div>
+        <input type="checkbox" name="hasName" id="hasName" data-bind="checked: hasName">
+    </div>
+</body>
+
+</html>

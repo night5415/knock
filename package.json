@@ -1,0 +1,21 @@
+{
+  "name": "knock",
+  "version": "1.0.0",
+  "description": "messing arount",
+  "main": "index.js",
+  "repository": {
+    "directory": "home"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knockout": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.1",
+    "@types/knockout": "^3.4.68"
+  }
+}
